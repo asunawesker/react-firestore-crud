@@ -11,7 +11,7 @@ class App extends Component {
       <div>
         <nav className="navbar navbar-expand navbar-dark bg-dark">
           <a href="/tutorials" className="navbar-brand">
-          bezKoder
+          DB NO CONVENCIONALES
           </a>
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
@@ -29,8 +29,10 @@ class App extends Component {
       <div className="container mt-3">
         <h2>React Firestore CRUD</h2>
         <Routes>
+        <Route path="/" element={<TutorialsList />}>
           <Route path="tutorials" element={<TutorialsList />}/>
           <Route path="add" element={<AddTutorial />} />
+        </Route>          
         </Routes>
       </div>
       </div>
