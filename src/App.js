@@ -27,12 +27,11 @@ class App extends Component {
           </div>
         </nav>
       <div className="container mt-3">
-        <h2>React Firestore CRUD</h2>
+        <h2>React Firestore CRUD</h2>        
         <Routes>
-        <Route path="/" element={<TutorialsList />}>
+          <Route path="/" element={<TutorialsList />}/>
           <Route path="tutorials" element={<TutorialsList />}/>
           <Route path="add" element={<AddTutorial />} />
-        </Route>          
         </Routes>
       </div>
       </div>
